@@ -1,0 +1,42 @@
+.articlelink-header{
+    font-family: 'Domine', serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.articlelink-subheader{
+    color: white;
+    font-family: 'Domine', serif;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    
+}
+
+.articlelink-author{
+    color: white;
+    font-family: 'Domine', serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.articlelink-date{
+    color: white;
+    font-family: 'Domine', serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}

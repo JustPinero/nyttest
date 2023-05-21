@@ -1,5 +1,5 @@
 //REACT
-import React, { Children } from 'react'
+import React from 'react'
 /* CUSTOM COMPONENTS */
 //ARTICLES
 import Article1 from "../../components/Articles/Article1";
@@ -11,12 +11,13 @@ import Article6 from "../../components/Articles/Article6";
 import Article7 from "../../components/Articles/Article7";
 import Article8 from "../../components/Articles/Article8";
 import Article9 from "../../components/Articles/Article9";
-
+import Article10 from "../../components/Articles/Article10";
+/* STYLE */
+import "./style.css"
 
 const ArticleGallery = ()=>{
     return(
         <div className="main-container">
-            <div className="scroll-container">
                 <Article1/>
                 <Article2/>
                 <Article3/>
@@ -26,7 +27,7 @@ const ArticleGallery = ()=>{
                 <Article7/>
                 <Article8/>
                 <Article9/>
-            </div>
+                <Article10/>
         </div>
     )
 }

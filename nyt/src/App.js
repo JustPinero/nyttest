@@ -1,6 +1,8 @@
 import React from 'react'
 /* Custom Components */
 import ArticleGallery from './pages/ArticleGallery';
+/* STYLE */
+import "./App.css"
 
 function App() {
   return (
