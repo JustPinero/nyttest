@@ -1,8 +1,8 @@
 const Article4ACopy = {
     header:"Styles",
-    subheader:"The Fight for Sneakers",
-    author:"By Daisuke Wakabayashi",
-    date: "Oct. 15, 2021"
+    subheader:"Who really taught Kareem Abdul-Jabbar his hook shot? The answer might depend on whose story you believe",
+    author:"By Joe Vardon",
+    date: "March 2, 2023"
 }
 
 const Article4BCopy = {
