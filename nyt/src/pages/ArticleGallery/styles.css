@@ -1,0 +1,19 @@
+.carousel-container {
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+#deck-container{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slide-container {
+  position: absolute;  
+  display: block;
+  height: 100vh;
+  width:100vw;
+}

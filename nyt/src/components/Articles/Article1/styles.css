@@ -5,6 +5,7 @@
     height: 100%;
     padding-left: 280px;
     padding-right: 285px;
+    overflow-y: scroll;
 }
 
 .header-container {
