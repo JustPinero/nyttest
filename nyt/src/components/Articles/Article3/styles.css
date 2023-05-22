@@ -1,3 +1,54 @@
 .article-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0;
+}
 
+.article-row {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.blur-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100%;
+    justify-content: flex-end;
+}
+
+.blur-image {
+    width: 557px;
+    height: 370px;  
+}
+
+.article-section {
+    height: 50%;
+    width: 100%;
+}
+
+.link-container {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ball-container {
+    display: flex;
+    padding-left: 78px;
+    padding-top: 105px;
+}
+
+.ball-image {
+    width: 383px;
+    height: 382px;
 }

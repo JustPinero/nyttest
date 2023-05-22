@@ -1,24 +1,26 @@
+.articlelink-container{
+  display: flex;
+  flex-direction: column;
+}
 .articlelink-header{
-    font-family: 'Domine', serif;
-    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 23px;
     font-weight: 800;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
     color: white;
+    margin:0 0 10px 0;
 }
 
 .articlelink-subheader{
     color: white;
     font-family: 'Domine', serif;
-    font-size: 23px;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 30px;
     font-style: italic;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    
-    
+    margin:0 0 6px 0;
 }
 
 .articlelink-author{
@@ -29,6 +31,7 @@
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
+    margin:0 0 6px 0
 }
 
 .articlelink-date{
@@ -39,4 +42,5 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+    margin:0
 }
