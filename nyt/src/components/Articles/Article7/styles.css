@@ -1,3 +1,19 @@
-.article-container{
+/* Article 7 Styles*/
+.article7-container {
+    display: flex;
+    width: 705px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.article7-text{
+    padding-bottom: 40px;
+}
+
+.gumwrapper-image{
+    height: auto;
+    width: 600px;
+    padding-right: 100px;
 }

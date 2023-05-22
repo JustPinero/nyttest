@@ -1,3 +1,20 @@
-.article-container{
+/* Article 6 Styles*/
+.article6-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100%;
+    padding-right: 50px;
+}
 
+.article6-text{
+    width: 60%;
+}
+
+.skull-image{
+    width: auto;
+    height: 480px;
+    margin-bottom: 20px;
 }

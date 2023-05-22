@@ -2,22 +2,24 @@
 import React from 'react'
 /* CUSTOM COMPONENTS */
 import ArticleLink from "../../ArticleLink";
+import ArticleFrame from '../../ArticleFrame';
 /* STYLING */
 import "./styles.css";
 /* COPY */
 import {Article6Copy} from "./Copy"
 /* IMAGES */
-import Skull from "../../../assets/photos/Article6/NYT_Understanding_LP_Still_Chewing 1.png";
+const Skull = "https://mwcm.nyt.com/dam/LP/brand/life/images/10_NFA_LP_Video_Chewing.gif";
 
 const Article6 = ()=>{
     return (
-        <div className='article-container'>
-            <div>
-                <ArticleLink articleData={Article6Copy} />
-                <img src={"https://mwcm.nyt.com/dam/LP/brand/life/images/10_NFA_LP_Video_Chewing.gif"}/>
+        <ArticleFrame>
+            <div className="article6-container">
+                <img className="skull-image" alt="skull chewing" src={Skull}/>
+                <div className="article6-text">
+                    <ArticleLink articleData={Article6Copy} />
+                </div>
             </div>
-
-        </div>
+        </ArticleFrame>
     )
 }
 

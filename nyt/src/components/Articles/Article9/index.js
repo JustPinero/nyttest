@@ -2,6 +2,7 @@
 import React from 'react'
 /* CUSTOM COMPONENTS */
 import ArticleLink from "../../ArticleLink";
+import ArticleFrame from '../../ArticleFrame';
 /* STYLING */
 import "./styles.css";
 /* COPY */
@@ -11,13 +12,14 @@ import WrappedSneaker from "../../../assets/photos/Article9/60_NewYorkTimes_Snea
 
 const Article9 = ()=>{
     return (
-        <div className='article-container'>
-            <div>
-                <ArticleLink articleData={Article9Copy} />
-                <img src={WrappedSneaker}/>
+        <ArticleFrame>
+            <div className="article9-container">
+                <div className="article9-text">
+                    <ArticleLink articleData={Article9Copy} />
+                </div>
+                <img className="wrappedsneaker-image" src={WrappedSneaker} alt="sneaker wrapped in plastic bag" />
             </div>
-
-        </div>
+        </ArticleFrame>
     )
 }
 

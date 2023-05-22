@@ -2,6 +2,8 @@
 import React from 'react'
 /* CUSTOM COMPONENTS */
 import ArticleLink from "../../ArticleLink";
+import ArticleFrame from "../../ArticleFrame"
+import ArticleRow from '../../ArticleRow';
 /* STYLING */
 import "./styles.css";
 /* COPY */
@@ -12,23 +14,21 @@ import Ball from "../../../assets/photos/Article3/image 596.png";
 
 const Article3 = ()=>{
     return (
-        <div className='article-container'>
-            <div className="article-section">
+        <ArticleFrame>
+            <div className="article3-container">
                 <div className="blur-container">
                     <img className="blur-image" src={Blur} alt="basketball players in a game blurred for the effect of speed" />
                 </div>
-            </div>
-            <div className="article-section">
-                <div className="article-row">
+                <ArticleRow>
                     <div className="link-container">
                         <ArticleLink articleData={Article3Copy} />
                     </div>
                     <div className="ball-container">
                         <img className="ball-image" alt="player dribbling basketball" src={Ball}/>
                     </div>
-                </div>
+                </ArticleRow>
             </div>
-        </div>
+        </ArticleFrame>
     )
 }
 

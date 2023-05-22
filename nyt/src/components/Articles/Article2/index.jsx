@@ -1,6 +1,7 @@
 /* REACT */
 import React from 'react'
 /* CUSTOM COMPONENTS */
+import ArticleFrame from "../../ArticleFrame"
 import ArticleLink from "../../ArticleLink";
 //STYLING
 import "./styles.css";
@@ -11,16 +12,16 @@ import Sneaker from "../../../assets/photos/Article2/AirJordan1OGBred1985_ChrisK
 
 const Article2 = ()=>{
     return (
-        <div className='article-container'>
-            <div className="article-section">
+        <ArticleFrame>
+            <div className="article2-container">
                 <div className="sneaker-container">
                     <img className="sneaker-image" alt="air jordan sneaker" src={Sneaker}/>
                 </div>
-                <div className="article-text_container">
+                <div className="article2-text">
                     <ArticleLink articleData={Article2Copy} />
                 </div>
             </div>
-        </div>
+        </ArticleFrame>
     )
 }
 

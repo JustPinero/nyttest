@@ -1,3 +1,83 @@
-.article-container{
+/* End Page Styles*/
+.endpage-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1650px;
+    width: 1420px;
+    overflow-y: scroll;
+}
 
+.endpage-text_container {
+    width: 1435px;
+    height: 803px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.endpage-text {
+    color:white;
+    font-family: 'Domine', serif;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 65px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.video-container {
+    margin: auto;
+    height: 610px;
+    width: 1080px;
+}
+
+
+.restart-container{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.restart-text{
+    color:white;
+    font-family: 'Domine', serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+
+.button-container{
+    height:240px;
+    width: 100%;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subscribebutton {
+    font-family: 'Libre Franklin', sans-serif;
+    color:white;
+    background-color: black;
+    padding:10px;
+    border-radius: 4px;
+}
+
+.subscriptionmessage-text{
+    color: black;
+    font-family: 'Domine', serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 16px;
 }

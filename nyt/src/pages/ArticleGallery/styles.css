@@ -5,15 +5,19 @@
   height: 100vh;
 }
 #deck-container{
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
   overflow: hidden;
+}
+
+#banner {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  color: white;
 }
 
 .slide-container {
   position: absolute;  
   display: block;
   height: 100vh;
-  width:100vw;
+  width: 100vw;
 }

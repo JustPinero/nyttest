@@ -7,18 +7,18 @@ import {Article1Copy} from "./Copy"
 //IMAGES
 import NYTLOGO from "../../../assets/logos/NYTLOGO.png"
 
-//Non-Mobile Splash Page
+//
 const FrontPage = ()=>{
     return (
-        <div className='article-container'>
-            <div className="header-container">
-                <img className="header-logo" alt='The New York Times Logo' src={NYTLOGO}/>
+        <div className='frontPage-container'>
+            <div className="frontPage-header_container">
+                <img className="frontPage-header-logo" alt='The New York Times Logo' src={NYTLOGO}/>
             </div>
-            <div className="article-body">
-                <p className="article-body_text">{Article1Copy.text1}</p>
+            <div className="frontPage-body">
+                <p className="frontPage-body_text">{Article1Copy.text1}</p>
             </div>
-            <div className="footer-container">
-                <p className="footer-text">{Article1Copy.text2}</p>
+            <div className="frontPage-footer_container">
+                <p className="frontPage-footer_text">{Article1Copy.text2}</p>
             </div>
         </div>
     )

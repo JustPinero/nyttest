@@ -2,7 +2,6 @@
 import React, { useRef, useState, useLayoutEffect, useCallback } from "react";
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
-import Slide from "./Slide";
 //ARTICLES
 import Article1 from "../../components/Articles/Article1";
 import Article2 from "../../components/Articles/Article2";
@@ -25,15 +24,21 @@ const ArticleGallery = () => {
       <Controller >
             <Scene 
                 triggerHook="onLeave"
-                duration="1000%"
+                duration="400%"
+                offset={100}
                 pin
             >
                     <Timeline
                         wrapper={<div id="deck-container"/>} 
                     >
+                    {/* <Timeline
+                        target={<h1 id="banner">Watch me appear!fsdalfafdsa.mfasdfklasdjflkajflkasjdfklasjdlsdklfjaskldjfakldfjklasjdfklas</h1>}
+                    >
+                        <Tween from={{ x:"-100%" }} to={{ x:"100%" }} />
+                    </Timeline> */}
                             <Tween
-                                from={{ x: '0%' }}
-                                to={{ x: '-110%' }}
+                                from={{ x: '0%', opacity:"1" }}
+                                to={{ x: '-90%', opacity:"0" }}
                             >   
                                 <div className="slide-container">
                                     <Article1/>
@@ -100,7 +105,7 @@ const ArticleGallery = () => {
                                 to={{ x: '-110%' }}
                             >   
                                 <div className="slide-container">
-                                    <Article7/>
+                                    <Article9/>
                                 </div>
                             </Tween>
                             <Tween
@@ -111,22 +116,6 @@ const ArticleGallery = () => {
                                     <Article10/>
                                 </div>
                             </Tween>
-                            {/* <Tween
-                            from={{ x: '100%' }}
-                            to={{ x:"0%" }}
-                            >    
-                                <Slide>
-                                    <Article2/>
-                                </Slide>
-                            </Tween> */}
-                                {/* <Article3/>
-                                <Article4/>
-                                <Article5/>
-                                <Article6/>
-                                <Article7/>
-                                <Article8/>
-                                <Article9/>
-                                <Article10/> */}
                 </Timeline>
             </Scene>
         </Controller>
