@@ -1,13 +1,12 @@
-//REACT
+/* REACT */
 import React from 'react'
-//STYLING
+/* STYLING */
 import "./styles.css";
-//COPY
+/* COPY */
 import {Article1Copy} from "./Copy"
-//IMAGES
+/* IMAGES */
 import NYTLOGO from "../../../assets/logos/NYTLOGO.png"
 
-//
 const FrontPage = ()=>{
     return (
         <div className='frontPage-container'>

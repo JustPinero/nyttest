@@ -1,5 +1,6 @@
 //REACT
 import React, { useRef, useState, useLayoutEffect, useCallback } from "react";
+//ANIMATION LIBRARIES
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 //ARTICLES
@@ -31,11 +32,6 @@ const ArticleGallery = () => {
                     <Timeline
                         wrapper={<div id="deck-container"/>} 
                     >
-                    {/* <Timeline
-                        target={<h1 id="banner">Watch me appear!fsdalfafdsa.mfasdfklasdjflkajflkasjdfklasjdlsdklfjaskldjfakldfjklasjdfklas</h1>}
-                    >
-                        <Tween from={{ x:"-100%" }} to={{ x:"100%" }} />
-                    </Timeline> */}
                             <Tween
                                 from={{ x: '0%', opacity:"1" }}
                                 to={{ x: '-90%', opacity:"0" }}

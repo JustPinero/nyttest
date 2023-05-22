@@ -1,8 +1,36 @@
-.articleframe-container{
-    display: flex;
-    flex-direction: column;
-    height: 1051px;
-    width: auto;
-    padding: 0;
-    overflow-y: hidden;
+@media (min-width: 576px) {
+    .articleframe-container{
+        display: flex;
+        flex-direction: column;
+        height:inherit;
+        width: inherit;
+        padding: 0;
+        overflow-y: hidden;
+    }
 }
+  
+  @media (min-width: 768px) {
+    .articleframe-container{
+        display: flex;
+        flex-direction: column;
+        height: 1051px;
+        width: auto;
+        padding: 0;
+        overflow-y: hidden;
+    }
+  }
+  
+  @media (min-width: 992px) {
+
+  }
+  
+  @media (min-width: 1200px) {
+    .articleframe-container{
+        display: flex;
+        flex-direction: column;
+        height: 1051px;
+        width: auto;
+        padding: 0;
+        overflow-y: hidden;
+    }
+  }

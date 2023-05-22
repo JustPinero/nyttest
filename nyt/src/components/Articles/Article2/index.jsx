@@ -14,6 +14,9 @@ const Article2 = ()=>{
     return (
         <ArticleFrame>
             <div className="article2-container">
+                <div className="mobile-banner">
+                   <h5 className="mobile-banner_text"> If you understand <a><span> Sneakers</span></a>, </h5>
+                </div>
                 <div className="sneaker-container">
                     <img className="sneaker-image" alt="air jordan sneaker" src={Sneaker}/>
                 </div>

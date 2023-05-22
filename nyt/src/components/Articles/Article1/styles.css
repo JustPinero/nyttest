@@ -1,47 +1,132 @@
 /* FrontPage Styles*/
+/* XS */
 .frontPage-container{
     display:flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding-left: 280px;
-    padding-right: 285px;
-    padding-bottom: 495px;
+    justify-content: center;
+    align-items: center;
     overflow-y: scroll;
 }
 
 .frontPage-header_container {
-    height: 73px;
-    display: flex;
-    align-items: center;
+    display: none;
 }
 
-.frontPage-header-logo {
-    height: 35.22px;
-    width: 268px;
-    object-fit: contain;
-}
 .frontPage-body {
     display: flex;
-    width: 855px;
+    width: 300px;
+    height:100%;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .frontPage-body_text {
     color:white;
+    font-size: 25px;
     font-weight: 300;
-    font-size: 55px;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
     font-family: 'Domine', serif;
 }
 
 .frontPage-footer_container{
     display: flex;
-    width: 900px;
-    height:97px;
+    width: 300px;
+    height: auto;
+    justify-content: center;
 }
 
 .frontPage-footer_text{
     color:white;
+    font-size: 25px;
     font-weight: 300;
-    font-size: 55px;
+    line-height: 28px;
+    letter-spacing: 0em;
     font-family: 'Domine', serif;
 }
+  
+/* MD */
+  @media (min-width: 768px) {
+    .frontPage-container{
+        justify-content: flex-start;
+        width: auto;
+        padding: 20px 80px 0px 88px;
+    }
+    .frontPage-header_container {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+    }
+    
+    .frontPage-header-logo {
+        height: 35.22px;
+        width: 268px;
+    }
+    .frontPage-body {
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+
+    .frontPage-body_text {
+        font-size: 39px;
+        font-weight: 300;
+        line-height: 46px;
+        letter-spacing: 0em;
+        text-align: left;    
+        font-family: 'Domine', serif;
+    }
+
+    .frontPage-footer_container{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .frontPage-footer_text{
+        font-weight: 300;
+        font-size: 39px;
+    }
+}
+  
+/* XL */
+  @media (min-width: 1200px) {
+    .frontPage-container{
+        padding-left: 129px;
+        padding-right:165px;
+    }
+
+    .frontPage-body_text {
+        font-size: 47px;
+        font-weight: 400;
+        line-height: 55px;
+    }
+
+    .frontPage-footer_text{
+        font-size: 47px;
+        font-weight: 400;
+        line-height: 55px;
+    }
+}
+/* XXL */
+@media (min-width: 1400px) { 
+    .frontPage-container{
+        padding-left: 285px;
+        padding-right:280px;
+    }
+    .frontPage-body_text {
+        font-size: 55px;
+        font-weight: 300;
+        line-height: 65px;
+
+    }
+    
+    .frontPage-footer_text{
+        font-size: 55px;
+        font-weight: 300;
+        line-height: 65px;
+    }
+ }

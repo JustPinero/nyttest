@@ -1,12 +1,14 @@
+/*ARTICLE LINK STYLES*/
+/* XS */
 .articlelink-container{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .articlelink-header{
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 23px;
+    font-size: 12px;
     font-weight: 800;
-    line-height: 21px;
+    line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
     color: white;
@@ -16,9 +18,11 @@
 .articlelink-subheader{
     color: white;
     font-family: 'Domine', serif;
-    font-size: 27px;
-    font-weight: 600;
-    line-height: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
     font-style: italic;
     margin:0 0 6px 0;
 }
@@ -26,21 +30,100 @@
 .articlelink-author{
     color: white;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 17px;
+    font-size: 11px;
     font-weight: 300;
-    line-height: 21px;
+    line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    margin:0 0 6px 0
+    margin:0;
 }
 
 .articlelink-date{
     color: white;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 17px;
+    font-size: 13px;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 17px;
     letter-spacing: 0em;
     text-align: left;
     margin:0
+}
+/* MD*/
+@media (min-width: 768px) {
+    .articlelink-header{
+        font-size: 17px;
+        font-weight: 800;
+        line-height: 21px;
+    }
+
+    .articlelink-subheader{
+        font-size: 23px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .articlelink-author{
+        font-size: 16.68px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+    
+    .articlelink-date{
+        font-size: 16.68px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+
+}
+/* XL */
+@media (min-width: 1200px) {
+    .articlelink-header{
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 21px;
+    }
+
+
+
+    .articlelink-subheader{
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .articlelink-author{
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 21px;
+    }
+    
+    .articlelink-date{
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 21px;
+    }
+
+}
+/* XXL */
+@media (min-width: 1400px) {
+    .articlelink-header{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .articlelink-subheader{
+        font-size: 27px;
+        line-height: 32px;
+    }
+
+    .articlelink-author{
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
+    .articlelink-date{
+        font-size: 22px;
+        line-height: 28px;
+    }
 }

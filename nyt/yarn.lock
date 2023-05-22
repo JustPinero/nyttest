@@ -8934,6 +8934,11 @@ react-gsap@^3.2.1:
   dependencies:
     react-is "^16.13.1"
 
+react-insta-stories@^2.5.9:
+  version "2.5.9"
+  resolved "https://registry.npmjs.org/react-insta-stories/-/react-insta-stories-2.5.9.tgz"
+  integrity sha512-fTcCmz9rAATPR8EVLfRlxXSeC12splCxTRG4zFMltFvb89HsyxKIqL3UNP7DvguFczVqHasdufIKwKwWKpQLfg==
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
