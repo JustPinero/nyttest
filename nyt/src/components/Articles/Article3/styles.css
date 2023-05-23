@@ -1,4 +1,5 @@
 /* Article 3 Styles*/
+/* XXS */
 .article3-container{
     display:flex;
     flex-direction: column;
@@ -44,4 +45,24 @@
 .ball-image {
     width: 383px;
     height: 382px;
+}
+
+/* MD */
+@media (min-width: 768px) {
+
+}
+
+/* LG */
+@media (min-width: 768px) {
+    
+}
+
+/* XL */
+@media (min-width: 1200px) {
+    
+}
+
+/* XXL */
+@media (min-width: 1400px) {
+    
 }
