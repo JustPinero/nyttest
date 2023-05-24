@@ -1,5 +1,5 @@
 //REACT
-import React, { useRef, useState, useLayoutEffect, useCallback } from "react";
+import React, { useRef, useState, useLayoutEffect, useCallback,Fragment } from "react";
 //ANIMATION LIBRARIES
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
@@ -24,95 +24,45 @@ const ArticleGallery = () => {
     <div className="carousel-container">
       <Controller >
             <Scene 
+                loglevel={3}
                 triggerHook="onLeave"
-                duration="400%"
-                offset={100}
+                duration="100%"
                 pin
             >
-                    <Timeline
-                        wrapper={<div id="deck-container"/>} 
-                    >
-                            <Tween
-                                from={{ x: '0%', opacity:"1" }}
-                                to={{ x: '-90%', opacity:"0" }}
-                            >   
-                                <div className="slide-container">
+                        <Tween     
+                            from={{ x: '0%' }}
+                            to={{ x: '-100%'}}>
+                            <div className="slidedeck-container">
+                                <div className="slide-container frontpage">
                                     <Article1/>
                                 </div>
-                            </Tween>
-                            <Tween
-                                from={{ x: '100%' }}
-                                to={{ x: '-110%' }}
-                            >   
-                                <div className="slide-container">
+                                <div id="firstslide" className="slide-container" >
                                     <Article2/>
                                 </div>
-                            </Tween>
-                            <Tween
-                                from={{ x: '100%' }}
-                                to={{ x: '-110%' }}
-                            >   
-                                <div className="slide-container">
+                                <div className="slide-container" >
                                     <Article3/>
                                 </div>
-                            </Tween>
-                            <Tween
-                                from={{ x: '100%' }}
-                                to={{ x: '-110%' }}
-                            >   
-                                <div className="slide-container">
+                                <div className="slide-container" >
                                     <Article4/>
                                 </div>
-                            </Tween>
-                            <Tween
-                                from={{ x: '100%' }}
-                                to={{ x: '-110%' }}
-                            >   
-                                <div className="slide-container">
+                                <div className="slide-container" >
                                     <Article5/>
                                 </div>
-                            </Tween>
-                            <Tween
-                                from={{ x: '100%' }}
-                                to={{ x: '-110%' }}
-                            >   
                                 <div className="slide-container">
                                     <Article6/>
                                 </div>
-                            </Tween>
-                            <Tween
-                                from={{ x: '100%' }}
-                                to={{ x: '-110%' }}
-                            >   
                                 <div className="slide-container">
                                     <Article7/>
-                                </div>
-                            </Tween>
-                            <Tween
-                                from={{ x: '100%' }}
-                                to={{ x: '-110%' }}
-                            >   
+                                </div> 
                                 <div className="slide-container">
                                     <Article8/>
                                 </div>
-                            </Tween>
-                            <Tween
-                                from={{ x: '100%' }}
-                                to={{ x: '-110%' }}
-                            >   
                                 <div className="slide-container">
                                     <Article9/>
                                 </div>
-                            </Tween>
-                            <Tween
-                                from={{ x: '100%' }}
-                                to={{ x: '0%' }}
-                            >   
-                                <div className="slide-container">
-                                    <Article10/>
-                                </div>
-                            </Tween>
-                </Timeline>
+                                <Article10/>
+                        </div>
+                    </Tween>
             </Scene>
         </Controller>
     </div>
@@ -189,3 +139,100 @@ export default ArticleGallery
 //     <Article10/>
 // </Tween>
 // </Timeline>
+
+
+//SEMI FUNCTIONING CAROUSEL
+
+// <Controller >
+// <Scene 
+//     triggerHook="onLeave"
+//     duration="400%"
+//     offset={100}
+//     pin
+// >
+//         <Timeline
+//             wrapper={<div id="deck-container"/>} 
+//         >
+//                 <Tween
+//                     from={{ x: '0%', opacity:"1" }}
+//                     to={{ x: '-90%', opacity:"0" }}
+//                 >   
+//                     <div className="slide-container">
+//                         <Article1/>
+//                     </div>
+//                 </Tween>
+//                 <Tween
+//                     from={{ x: '100%' }}
+//                     to={{ x: '-110%' }}
+//                 >   
+//                     <div className="slide-container">
+//                         <Article2/>
+//                     </div>
+//                 </Tween>
+//                 <Tween
+//                     from={{ x: '100%' }}
+//                     to={{ x: '-110%' }}
+//                 >   
+//                     <div className="slide-container">
+//                         <Article3/>
+//                     </div>
+//                 </Tween>
+//                 <Tween
+//                     from={{ x: '100%' }}
+//                     to={{ x: '-110%' }}
+//                 >   
+//                     <div className="slide-container">
+//                         <Article4/>
+//                     </div>
+//                 </Tween>
+//                 <Tween
+//                     from={{ x: '100%' }}
+//                     to={{ x: '-110%' }}
+//                 >   
+//                     <div className="slide-container">
+//                         <Article5/>
+//                     </div>
+//                 </Tween>
+//                 <Tween
+//                     from={{ x: '100%' }}
+//                     to={{ x: '-110%' }}
+//                 >   
+//                     <div className="slide-container">
+//                         <Article6/>
+//                     </div>
+//                 </Tween>
+//                 <Tween
+//                     from={{ x: '100%' }}
+//                     to={{ x: '-110%' }}
+//                 >   
+//                     <div className="slide-container">
+//                         <Article7/>
+//                     </div>
+//                 </Tween>
+//                 <Tween
+//                     from={{ x: '100%' }}
+//                     to={{ x: '-110%' }}
+//                 >   
+//                     <div className="slide-container">
+//                         <Article8/>
+//                     </div>
+//                 </Tween>
+//                 <Tween
+//                     from={{ x: '100%' }}
+//                     to={{ x: '-110%' }}
+//                 >   
+//                     <div className="slide-container">
+//                         <Article9/>
+//                     </div>
+//                 </Tween>
+//                 <Tween
+//                     from={{ x: '100%' }}
+//                     to={{ x: '0%' }}
+//                 >   
+//                     <div className="slide-container">
+//                         <Article10/>
+//                     </div>
+//                 </Tween>
+//     </Timeline>
+// </Scene>
+// </Controller>
