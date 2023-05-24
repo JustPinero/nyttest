@@ -26,7 +26,7 @@ const ArticleGallery = () => {
             <Scene 
                 loglevel={3}
                 triggerHook="onLeave"
-                duration="100%"
+                duration="400%"
                 pin
             >
                         <Tween     
@@ -36,7 +36,7 @@ const ArticleGallery = () => {
                                 <div className="slide-container frontpage">
                                     <Article1/>
                                 </div>
-                                <div id="firstslide" className="slide-container" >
+                                <div id="firstslide" className="slide-container" style={{backgroundColor:"green"}}>
                                     <Article2/>
                                 </div>
                                 <div className="slide-container" >
@@ -60,7 +60,9 @@ const ArticleGallery = () => {
                                 <div className="slide-container">
                                     <Article9/>
                                 </div>
-                                <Article10/>
+                                <div className="slide-container">
+                                    <Article10/>
+                                </div>
                         </div>
                     </Tween>
             </Scene>
